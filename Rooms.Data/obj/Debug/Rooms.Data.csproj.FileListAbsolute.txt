@@ -1,0 +1,16 @@
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\Rooms.Data.dll.config
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\Rooms.Data.dll
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\Rooms.Data.pdb
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\AutoMapper.dll
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\AutoMapper.xml
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.csprojAssemblyReference.cache
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.csproj.CopyComplete
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.dll
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.pdb
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.Migrations.InitialCreate.resources
+C:\Users\Aleksandr\source\A-Level\RoomsAspMvcApplication\Rooms.Data\obj\Debug\Rooms.Data.csproj.GenerateResource.cache
