@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Rooms.Data.Contracts;
 using Rooms.Data.Models;
 using Rooms.Domain.Contracts;
 using Rooms.Domain.Models;
@@ -13,7 +14,8 @@ namespace Rooms.Domain.Services
     public class PersonService : IPersonService
     {
         private readonly IMapper _mapper;
-        public PersonService()
+        private readonly IPersonRepository _personRepository;
+        public PersonService(IPersonRepository personRepository)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -22,16 +24,20 @@ namespace Rooms.Domain.Services
             });
 
             _mapper = new Mapper(config);
+            _personRepository = personRepository;
         }
 
-        public void AddPersonToRoom(RoomModel room, PersonModel person)
+        public void AddPersonToRoom(RoomModel roomModel, PersonModel personModel)
         {
-            throw new NotImplementedException();
+            var room = _mapper.Map<Room>(roomModel);
+            var person = _mapper.Map<Person>(personModel);
+            _personRepository.AddPersonToRoom(room, person);
         }
 
-        public void Create(PersonModel model)
+        public void Create(PersonModel personModel)
         {
-            throw new NotImplementedException();
+            var person = _mapper.Map<Person>(personModel);
+            _personRepository.Create(person);
         }
     }
 }

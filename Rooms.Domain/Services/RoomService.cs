@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Rooms.Data.Contracts;
 using Rooms.Data.Models;
 using Rooms.Domain.Contracts;
 using Rooms.Domain.Models;
@@ -10,10 +11,11 @@ using System.Threading.Tasks;
 
 namespace Rooms.Domain.Services
 {
-    public class RoomService:IRoomService
+    public class RoomService : IRoomService
     {
         private readonly IMapper _mapper;
-        public RoomService()
+        private readonly IRoomRepository _roomRepository;
+        public RoomService(IRoomRepository roomRepository)
         {
             var config = new MapperConfiguration(cfg =>
             {
@@ -22,16 +24,20 @@ namespace Rooms.Domain.Services
             });
 
             _mapper = new Mapper(config);
+            _roomRepository = roomRepository;
         }
 
         public void Create(RoomModel model)
         {
-            throw new NotImplementedException();
+            var room = _mapper.Map<Room>(model);
+            _roomRepository.Create(room);
         }
 
         public IReadOnlyCollection<RoomModel> GetAll()
         {
-            throw new NotImplementedException();
+            var rooms = _roomRepository.GetAll();
+            var roomsModel = _mapper.Map<IReadOnlyCollection<RoomModel>>(rooms);
+            return roomsModel;
         }
     }
 }
